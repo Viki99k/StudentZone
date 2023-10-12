@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Entertainment Zone</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='enter.css'>
+    <script src='enter.js'></script>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="entertainment.html">ENTERTAINMENT</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="aboutme.html">ABOUT ME</a>
+    </div>
+    <h1>We can have fun in different way here are some listed one`s to engage</h1>
+    <div class="container">
+        <div class="bored-activity">
+            <h2>Don`t know what to do ?</h2>
+            <hr>
+            <p>Click the button it will show you...</p>
+            <button id="getActivityButton">Get Activity</button>
+            <p id="activityResult"></p>
+        </div>
+        <div class="m-img">
+            <img src="music.jpg">
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="memes">
+            <h2>Want to be funny.</h2>
+            <p> make friend watch memes by just clicking on it!</p>
+            <div id="memeContainer">
+                <button id="getmeme" onclick="getmem()">Get Meme</button>
+            </div>
+        </div>
+        <div>
+            <img src="boy.jpeg" alt="laptop boy">
+        </div>
+    </div>
+    <hr>
+    <div class="anime-container">
+        <h2>Anime to watch</h2>
+        <div class="anime">
+            <img src="onepiece.jpeg">
+            <a href="https://animeheaven.me/anime.php?1ht8d">ONE PIECE</a>
+        </div>
+        <div class="anime">
+            <img src="naruto.jpeg">
+            <a href="https://animeheaven.me/anime.php?ukr6y">NARUTO</a>
+        </div>
+        <div class="anime">
+            <img src="iruma.jpeg">
+            <a href="https://animeheaven.me/anime.php?f6sed">IRUMA KUN</a>
+        </div>
+    </div>
+    <script>
+        function getmem(){
+            window.location.href="mem.html";
+
+        }
+    </script>
+</body>
+
+</html>

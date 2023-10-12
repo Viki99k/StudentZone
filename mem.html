@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mem Zone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgb(9, 22, 33);
+            color: rgb(217, 186, 151);
+        }
+
+        header {
+            background-color: rgb(62, 131, 132);
+            padding: 10px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+        }
+        .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.nav a:hover {
+    background-color:#ff9900;
+}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">HOME</a>
+        <a href="entertainment.html">ENTERTAINMENT</a>
+        <a href="education.html">EDUCATION</a>
+        <a href="aboutme.html">ABOUT ME</a>
+    </div>
+    <header>
+        <h1>Meme Page</h1>
+    </header>
+
+    <main>
+        <p>get funny meme by clicking on below button. Just make sure that you <strong>undersatand english and have enternet connection</strong></p>
+        <button onclick="getRandomMeme()">Get Meme</button>
+        <div id="memeContainer"></div>
+    </main>
+
+    <script>
+        function getRandomMeme() {
+            fetch('https://meme-api.com/gimme')
+                .then(response => response.json())
+                .then(data => {
+                    if ('url' in data) {
+                        displayMeme(data.url);
+                    } else {
+                        console.error('Error: Unable to fetch meme data');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching meme:', error);
+                });
+        }
+
+        function displayMeme(url) {
+            document.getElementById('memeContainer').innerHTML = '';
+            const memeImage = document.createElement('img');
+            memeImage.src = url;
+            memeImage.alt = 'Random Meme';
+            document.getElementById('memeContainer').appendChild(memeImage);
+        }
+    </script>
+
+</body>
+</html>

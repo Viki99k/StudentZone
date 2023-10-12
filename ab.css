@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.nav a:hover {
+    background-color:#ff9900;
+}
+
+.info-container{
+    /* background-color:pink; */
+    height:58vh;
+    width:80vw;
+    margin:144px auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+.pic img{
+    height:58vh;
+}
+
+.info{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about{
+    font-size: 2.5em;
+}
+
+.more-about{
+    margin-top: 23px;
+    font-size: 2.2em;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.btn{
+    margin-top:2.2em;
+    font-size: 16px;
+}
+
+.btn-sm{
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+}
+.btn button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color:white;
+    background-color:dodgerblue;
+    font-weight:bold;
+    font-size:2em;
+    margin:3px 3px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background-color:white;
+    color:dodgerblue;
+}
+
+@media (max-width:1200px){
+    /* *{
+        background-color: red;
+    } */
+    .pic{
+        display: block;
+    }
+
+    .info{
+        font-size: 10px;
+    }
+
+    .btn{
+        font-size: 10px;
+    }
+
+    .intro, .blogcontainer, .contactform{
+        margin:  8px  ;
+    }
+}
+
+@media (max-width:720px){
+    .pic{
+        display: none;
+    }
+}

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.education-page {
+    text-align: center;
+    padding: 20px;
+    background-color:black;
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    margin: 5px 0;
+}
+
+.nav a:hover {
+    background-color:#ff9900;
+}
+h1{
+    background-color: white;
+    color: black;
+    width: 500px;
+    border-radius:250px;
+}
+
+p{
+    margin-top: 10px;
+}
+.pdf-link-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pdf-link {
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.pdf-link img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.pdf-link a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: blue;
+    color:#ff9900;
+    font-size: 30px;
+}
+
+.pdf-link a:hover{
+    background-color:#ff9900;
+    color:blue ;
+}
+
+.video-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video-link {
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.video-link img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.video-link a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: blue;
+    color:#ff9900;
+    font-size: 30px;
+}
+
+.video-link a:hover{
+    background-color:#ff9900;
+    color:blue ;
+}
+
+
+
+.question-paper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.paper {
+    text-align: center;
+    margin: 20px;
+   
+}
+
+.paper img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.paper a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: blue;
+    color:#ff9900;
+    font-size: 30px;
+}
+
+.paper a:hover{
+    background-color:#ff9900;
+    color:blue ;
+}
