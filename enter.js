@@ -3,11 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const activityResult = document.getElementById("activityResult");
 
     getActivityButton.addEventListener("click", function () {
-        fetch("https://cors-anywhere.herokuapp.com/https://www.boredapi.com/api/activity/")
+        fetch("https://api.adviceslip.com/advice/")
             .then(response => response.json())
             .then(data => {
-                const activityText = data.activity;
-                activityResult.textContent = "Activity: " + activityText;
+                const activityText = data.advice;
+                activityResult.textContent = "Advise: " + adviceText;
                 activityResult.classList.remove("error");
                 activityResult.classList.add("success");
             })
