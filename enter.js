@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fetch("https://api.adviceslip.com/advice/")
             .then(response => response.json())
             .then(data => {
-                const adviceText = data.advice;
+                const adviceText = data.slip.advice;
                 activityResult.textContent = "Advise: " + adviceText;
                 activityResult.classList.remove("error");
                 activityResult.classList.add("success");
